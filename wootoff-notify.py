@@ -30,7 +30,10 @@ while 1:
 		percent = data[0]
 		out = "SOLD OUT" in r
 		if name != cur or (not so and out):
-			notify(name, "%s - %s" % (price, percent))
+			if out:
+				notify(name, "SOLD OUT")
+			else:
+				notify(name, "%s - %s" % (price, percent))
 			cur = name
 			so = out
 	time.sleep(wait)
