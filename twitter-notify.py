@@ -8,6 +8,11 @@ wait=15 # in seconds
 ##
 ## Info: 
 ##    Twitter notifications daemon
+## 
+## Dependencies:
+##    python-twitter
+##       http://code.google.com/p/python-twitter/
+##       (apt-get install python-twitter)
 ##
 ## Run:
 ##    python twitter-notify.py 
